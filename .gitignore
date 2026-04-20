@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+tribe_cache/
+*.npy
+*.npz
+*.mp4
+*.wav
+*.png
+report*.md
+!references/*.md
