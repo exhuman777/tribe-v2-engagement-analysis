@@ -68,13 +68,25 @@ Claude Code auto-discovers skills in `~/.claude/skills/`. Restart Claude Code, t
 
 ## Examples
 
-### VIA 45s viral reel (Remotion)
+### VIA 45s viral reel (Remotion — baseline)
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/exhuman777/via-ad-remotion)
 
-A full worked example: a 45s reel built in [Remotion](https://www.remotion.dev/) following the UGC arc from [`references/hooks-and-ugc-scripting.md`](references/hooks-and-ugc-scripting.md), rendered to `.mp4`, then scored with this skill.
+A 45s reel built in [Remotion](https://www.remotion.dev/) following the UGC arc from [`references/hooks-and-ugc-scripting.md`](references/hooks-and-ugc-scripting.md).
 
 Repo: https://github.com/exhuman777/via-ad-remotion
+
+### VIA signal feed — cinematic, 3 hook variants, dual-res (Remotion)
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/exhuman777/via-signal-feed)
+
+Polished 40s cinematic port with:
+- 3 hook variants (MISS · GATEKEEP · POV)
+- two resolutions per variant: 720×1280 (CapCut) + 1080×1920 (TRIBE v2)
+- 18s hook-test reel for single-upload A/B/C discovery
+- legal-safe Scene 7 (PATHS → YOU CHOOSE 1) per EU AI Act
+
+Repo: https://github.com/exhuman777/via-signal-feed
 
 ```bash
 # 1. scaffold the ad in browser
