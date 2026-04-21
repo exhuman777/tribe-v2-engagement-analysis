@@ -9,3 +9,4 @@ tribe_cache/
 *.png
 report*.md
 !references/*.md
+node_modules/
