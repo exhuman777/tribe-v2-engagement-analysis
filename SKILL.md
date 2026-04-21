@@ -84,6 +84,22 @@ See [scripts/analyze.py](scripts/analyze.py) for the full pipeline and [scripts/
 
 See [roi-to-engagement.md](references/roi-to-engagement.md) for full vertex→network→editorial-meaning lookup and the rationale / literature pointers behind each mapping.
 
+## Script & Hook Writing (pre-production)
+
+Before rendering and analyzing, write the reel correctly. See [hooks-and-ugc-scripting.md](references/hooks-and-ugc-scripting.md) for:
+
+- 5 awareness stages (match hook to audience)
+- 8 psychological triggers (Pattern Interrupt, Identity Call-Out, Pain Agitation, Curiosity Gap, Social Proof, Contrarian, Aspiration, Urgency)
+- Triple-layer hook rule (Spoken + Visual + Text Overlay)
+- 35 hook tactics taxonomy
+- UGC emotional arc (Hook → Problem → Solution → Proof → CTA)
+- Read-aloud test
+- Word-count targets by duration
+- Voice-pattern swipe file
+- VIA-specific legal-safe phrasing (EU AI Act)
+
+The typical loop: write with hooks-and-ugc → render → score with TRIBE → fix the beat that valleyed.
+
 ## Common Mistakes
 
 - **Treating TRIBE predictions as ground truth for one viewer.** It predicts the *average* subject. Use for relative ranking within one stimulus, not absolute claims.

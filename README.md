@@ -66,6 +66,28 @@ Claude Code auto-discovers skills in `~/.claude/skills/`. Restart Claude Code, t
 > "where should I cut this podcast?"
 > "run tribe-v2 on preds.npy"
 
+## Examples
+
+### VIA 45s viral reel (Remotion)
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/exhuman777/via-ad-remotion)
+
+A full worked example: a 45s reel built in [Remotion](https://www.remotion.dev/) following the UGC arc from [`references/hooks-and-ugc-scripting.md`](references/hooks-and-ugc-scripting.md), rendered to `.mp4`, then scored with this skill.
+
+Repo: https://github.com/exhuman777/via-ad-remotion
+
+```bash
+# 1. scaffold the ad in browser
+git clone https://github.com/exhuman777/via-ad-remotion.git && cd via-ad-remotion
+npm install && npm run dev          # http://localhost:3000
+
+# 2. render
+npm run render                       # out/via_ad.mp4
+
+# 3. score with TRIBE v2 (Colab preds.npy flow)
+python scripts/analyze.py --preds preds.npy --out report.md --plot curve.png
+```
+
 ## Files
 
 ```
