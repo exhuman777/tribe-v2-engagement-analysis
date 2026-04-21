@@ -536,8 +536,8 @@ const SceneStats: React.FC = () => {
 				{stats.map(({to, suffix, label, color}, i) => {
 					const cSp = spring({
 						fps,
-						frame: Math.max(0, frame - 18 - i * 11),
-						config: {damping: 160},
+						frame: Math.max(0, frame - 8 - i * 8),
+						config: {damping: 180},
 					});
 					return (
 						<div
@@ -552,12 +552,12 @@ const SceneStats: React.FC = () => {
 								boxShadow: `0 0 44px ${color}1a`,
 							}}
 						>
-							{/* Counting number */}
+							{/* startFrame + durationF ≤ 60 so all stats finish before the outgoing transition */}
 							<CountUp
 								to={to}
 								suffix={suffix}
-								startFrame={22 + i * 11}
-								durationF={45}
+								startFrame={10 + i * 8}
+								durationF={24}
 								style={{
 									fontSize: 88,
 									fontWeight: 900,
